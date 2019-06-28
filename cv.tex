@@ -19,7 +19,6 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
 \documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
@@ -106,13 +105,16 @@ Kenyon College, Gambier, OH \hfill 1992
 
 \vspace{8pt} % Gap between title and text
 
+{\sl Associate University Librarian for Research and Digital Initiatives} \hfill July 2019 \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
 {\sl Adjunct Professor of Computer Science} \hfill August 2018 \\
 School of Engineering, Vanderbilt University, Nashville, TN 
 
 {\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017 \\
 College of Arts and Science, Vanderbilt University, Nashville, TN 
 
-{\sl Associate University Librarian for Research and Learning} \hfill November 2016 \\
+{\sl Associate University Librarian for Research and Learning} \hfill November 2016 - June 2019 \\
 Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
 
 {\sl Lecturer} \hfill January 2014 - June 2014 \\
@@ -132,14 +134,14 @@ Princeton Theological Seminary, Princeton, NJ
 \vspace{0.2in} % Some whitespace between sections
 
 %----------------------------------------------------------------------------------------
-%	COURSE TAUGHT SECTION
+%	COURSES TAUGHT SECTION
 %----------------------------------------------------------------------------------------
 
 \section{\centerline{COURSES}}
 
 \vspace{8pt} % Gap between title and text
 
-{\sl \href{https://github.com/CliffordAnderson/CS1000/blob/master/readme.md}{CS 1000: The Beauty and Joy of Computing}} \hfill Fall 2018 \\ School of Engineering, Vanderbilt University
+{\sl \href{https://github.com/CliffordAnderson/CS1000/blob/master/readme.md}{CS 1000: The Beauty and Joy of Computing}} \hfill Fall 2018, Spring 2019 \\ School of Engineering, Vanderbilt University
 
 {\sl \href{https://www.vanderbilt.edu/digitalhumanities/the-digital-flaneur-mapping-twentieth-century-berlin/}{GER 8205: The Digital Flâneur: Mapping Twentieth-Century Berlin}} \hfill Spring 2018 \\ College of Arts and Science, Vanderbilt University \\ Co-taught with Joy Calico, Professor of Musicology
 
@@ -157,31 +159,50 @@ Princeton Theological Seminary, Princeton, NJ
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
+% definition of filters for splitting bibliographies
+\defbibfilter{translations}{type=book or type=incollection or type=article} 
+
 \section{\centerline{PUBLICATIONS}} 
 
 \vspace{8pt} % Gap between title and text
 
-%Sets the bibliography style to UNSRT and imports the 
-%bibliography file "refs.bib".
-
 \nocite{*}
-\section{Ph.D. Thesis}
+
+\section{Thesis}
 \printbibliography[type=thesis,heading=none]
 
-\section{Books}
-\printbibliography[type=book,heading=none]
+\section{Monograph}
+\printbibliography[type=book,heading=none, keyword={monograph}]
 
-\section{Articles}
-\printbibliography[type=article,heading=none]
+\section{Edited volumes}
+\printbibliography[type=book,heading=none, keyword={edited}]
 
-\section{Proceedings}
-\printbibliography[type=inproceedings,heading=none]
+\section{Articles (peer-reviewed)}
+\printbibliography[type=article,heading=none, keyword={reviewed}]
+
+\section{Articles (invited)}
+\printbibliography[type=article,heading=none, keyword={invited}]
+
+\section{Chapters (peer-reviewed)}
+\printbibliography[type=incollection,heading=none, keyword={reviewed}]
+
+\section{Chapters (invited)}
+\printbibliography[type=incollection,heading=none, keyword={invited}]
+
+\section{Proceedings (peer-reviewed)}
+\printbibliography[type=inproceedings,heading=none, keyword={reviewed}]
+
+\section{Proceedings (invited)}
+\printbibliography[type=inproceedings,heading=none, keyword={invited}]
 
 \section{Reviews}
 \printbibliography[type=review,heading=none]
 
 \section{Translations}
-\printbibliography[type=misc,heading=none]
+\printbibliography[filter=translations, heading=none, keyword={translation}]
+
+\section{Unpublished}
+\printbibliography[type=unpublished, heading=none]
 
 %----------------------------------------------------------------------------------------
 
@@ -194,8 +215,11 @@ Princeton Theological Seminary, Princeton, NJ
 \section{\centerline{PEER REVIEW}}
 
 \vspace{8pt} % Gap between title and text
-
+Reviewer, Digital Humanities 2019 (Utrecht) \hfill 2018 \\
+Reviewer, Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO) Domain of Science \hfill 2018 \\
+Reviewer, Digital Humanities 2018 (Mexico City) \hfill 2017 \\
 Panelist (Peer Reviewer), Digital Humanities Advancement Grants, NEH \& IMLS \hfill 2017 \\
+Reviewer, Digital Humanities 2017 (Montreal) \hfill 2016 \\
 Panelist (Peer Reviewer), Institute for Advanced Topics in the Digital Humanities, NEH \hfill 2015
 
 \vspace{0.2in} % Some whitespace between sections
@@ -210,7 +234,10 @@ Panelist (Peer Reviewer), Institute for Advanced Topics in the Digital Humanitie
 \vspace{8pt} % Gap between title and text
 
 {\bf Current} \\
-Digital Humanities Center Faculty Advisory Committee, Vanderbilt University \hfill 2018\\
+Digital Resource Committee, Office of the Provost, Vanderbilt University \hfill 2019\\
+Trans-institutional Task Force on the Digital Humanities, Vanderbilt University \hfill 2019\\
+"Tiger Team" Task Force for Digital Scholarship, Technology, and Collaboration Services, Vanderbilt University \hfill 2018\\
+Digital Humanities Center Faculty Advisory Committee, Vanderbilt University \hfill 2019\\
 \href{https://www.atla.com/Members/divisions/committees/Pages/Scholarly-Communication-Committee.aspx}{Scholarly Communication Committee}, American Theological Library Association \hfill 2018\\
 Workshop and Webinar Committee, National Federation of Advanced Information Services \hfill 2017\\
 Collegium of Curators (Chair), University Library, Vanderbilt University  \hfill 2017\\

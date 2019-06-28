@@ -36,7 +36,7 @@
 \usepackage{csquotes}
 
 \usepackage[notes,backend=biber, sorting=ydnt]{biblatex-chicago}
-\bibliography{refs}
+\bibliography{ref}
 
 \newsectionwidth{0pt} % Stops section indenting
 
@@ -195,8 +195,11 @@ Princeton Theological Seminary, Princeton, NJ
 \section{Proceedings (invited)}
 \printbibliography[type=inproceedings,heading=none, keyword={invited}]
 
+\section{Encyclopedia articles}
+\printbibliography[type=incollection,heading=none, keyword={encyclopedia}]
+
 \section{Reviews}
-\printbibliography[type=review,heading=none]
+\printbibliography[type=article,heading=none, keyword={review}]
 
 \section{Translations}
 \printbibliography[filter=translations, heading=none, keyword={translation}]

@@ -22,9 +22,7 @@
 \documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
-
 \usepackage{hyperref}
-
 % Fix UTF-8 for Zotero bibliography
 % See https://forums.zotero.org/discussion/63425/overleaf-integration-special-characters
 \usepackage[T1]{fontenc}
@@ -35,7 +33,7 @@
 \usepackage{csquotes}
 \usepackage{tabto}
 \usepackage{hanging}
-
+\usepackage{import}
 \usepackage[notes,backend=biber, sorting=ydnt]{biblatex-chicago}
 \bibliography{ref}
 
@@ -57,15 +55,8 @@
 
 \begin{resume}
 
-%----------------------------------------------------------------------------------------
-%   RESEARCH SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{RESEARCH INTERESTS}}
-
-\vspace{15pt} % Gap between title and text
-
-My current areas of research are the study of algorithms as cultural artifacts, computational thinking in the humanities, and the religious dimensions of intellectual property.
+% \import{.}{research.tex} % For academic positions
+\import{.}{specialities.tex} % For library positions
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -193,7 +184,7 @@ Princeton Theological Seminary, Princeton, NJ
 \section{Monograph}
 \printbibliography[type=book,heading=none, keyword={monograph}]
 
-\section{Edited volumes}
+\section{Edited Volumes}
 \printbibliography[type=book,heading=none, keyword={edited}]
 
 \section{Articles (Refereed)}

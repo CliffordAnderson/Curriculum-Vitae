@@ -55,8 +55,7 @@
 
 \begin{resume}
 
-\import{.}{research.tex} % For academic positions
-% \import{.}{specialities.tex} % For library positions
+\import{.}{theology-research.tex} % For theology positions
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -96,7 +95,7 @@ Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN
 {\sl Adjunct Professor of Computer Science} \hfill August 2018 \\
 School of Engineering, Vanderbilt University, Nashville, TN 
 
-{\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017  \\
+{\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017 - December 2019 \\
 College of Arts and Science, Vanderbilt University, Nashville, TN 
 
 {\sl Associate University Librarian for Research and Learning} \hfill November 2016 - June 2019 \\
@@ -115,34 +114,6 @@ Princeton Theological Seminary, Princeton, NJ
 Princeton Theological Seminary, Princeton, NJ 
 
 %----------------------------------------------------------------------------------------
-%	COURSES TAUGHT SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{COURSES}}
-
-\vspace{8pt} % Gap between title and text
-
-{\sl \href{https://github.com/CliffordAnderson/CS1000/blob/master/readme.md}{CS 1000: The Beauty and Joy of Computing}} \hfill Fall 2018, Spring 2019, Fall 2019 \\ School of Engineering, Vanderbilt University
-
-{\sl \href{https://www.vanderbilt.edu/digitalhumanities/the-digital-flaneur-mapping-twentieth-century-berlin/}{GER 8205: The Digital Flâneur: Mapping Twentieth-Century Berlin}} \hfill Spring 2018 \\ College of Arts and Science, Vanderbilt University \\ Co-taught with Joy Calico, Professor of Musicology
-
-{\sl \href{https://commons.vanderbilt.edu/majorprograms/EUS_1001.pdf}{EUS 1001.01 Mapping Berlin in the 20th Century}} \hfill Spring 2017 \\ College of Arts and Science, Vanderbilt University \\ Co-taught with Rebecca Panter, Postdoctoral Fellow in Digital Humanities
-
-{\sl \href{http://paralipomena.com/}{REL 3986 / DIV 3986: Topics in Digital Humanities}} \hfill Spring 2014 \\ College of Arts and Science and Vanderbilt Divinity School, Vanderbilt University \\ Co-taught with David Michelson, Associate Professor of the History of Christianity 
-
-%----------------------------------------------------------------------------------------
-%	GRANTS AND SPONSORED RESEARCH SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{SELECTED GRANTS AND SPONSORED RESEARCH}}
-
-\vspace{8pt} % Gap between title and text
-
-\begin{hangparas}{.25in}{1}Co-Principal Investigator (with Bernard F. Reilly of the Center for Research Libraries), "\href{https://news.vanderbilt.edu/2017/09/27/workshop-will-chart-the-future-of-television-news-preservation/}{Sustaining Television News Preservation for the Next Generation}," The Andrew W. Mellon Foundation, 2017-2018\end{hangparas}
-
-\begin{hangparas}{.25in}{1}Project Director, "\href{https://securegrants.neh.gov/publicquery/main.aspx?f=1\&gn=HT-50080-13}{XQuery Summer Institute: Advancing XML-Based Scholarship from Representation to Discovery}," Institute for Advanced Topics in the Digital Humanities, National Endowment for the Humanities, 2013-2014\end{hangparas}
-
-%----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
@@ -155,27 +126,30 @@ Princeton Theological Seminary, Princeton, NJ
 
 \nocite{*}
 
+\section{Thesis}
+\printbibliography[type=thesis,heading=none]
+
 \section{Monograph}
 \printbibliography[type=book,heading=none, keyword={monograph}]
 
 \section{Edited Volumes}
 \printbibliography[type=book,heading=none, keyword={edited}]
 
-\section{Articles (Refereed)}
-\printbibliography[type=article,heading=none, keyword={refereed}]
+\section{Articles}
+\printbibliography[type=article,heading=none, keyword={theology}, notkeyword=review, notkeyword={translation}]
 
-%----------------------------------------------------------------------------------------
-%	DIGITAL SKILLS SECTION
-%----------------------------------------------------------------------------------------
+\section{Chapters}
+\printbibliography[type=incollection,heading=none, keyword={theology},
+notkeyword={encyclopedia}, notkeyword={translation}]
 
-\section{\centerline{DIGITAL SKILLS}}
+\section{Encyclopedia Articles}
+\printbibliography[type=incollection,heading=none, keyword={theology}, keyword={encyclopedia}, notkeyword={translation}]
 
-\vspace{8pt} % Gap between title and text
+\section{Reviews}
+\printbibliography[type=article,heading=none, keyword={review}, keyword={theology}]
 
-Programming Languages: \hfill NetsBlox, Snap!, Cypher, JavaScript, Python, R, Elm \\
-Frameworks: \hfill Apache Spark, BaseX, eXist, Hugo, Jekyll, Leaflet, Omeka, Node (Express) \\
-Tools: \hfill ArcGIS, git, GitHub, \LaTeX, MapBox, oXygen, RStudio, Twilio, Zotero \\
-XML Standards: \hfill XPath, XML Schema, Relax NG, Schematron, XQuery, XSLT
+\section{Translations}
+\printbibliography[filter=translations, heading=none, keyword={translation}, keyword={theology}]
 
 \end{resume} 
 \end{document}

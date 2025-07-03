@@ -13,13 +13,13 @@
 % This template requires the res.cls file to be in the same directory as the
 % .tex file. The res.cls file provides the resume style used for structuring the
 % document.
-%
+%https://www.overleaf.com/project/5bdce4749050e95c68f6e198
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{hyperref}
@@ -37,6 +37,9 @@
 \usepackage[notes,backend=biber, sorting=ydnt]{biblatex-chicago}
 \bibliography{ref}
 
+\newif\ifbullets
+\bulletsfalse % or \bulletstrue
+
 \newsectionwidth{0pt} % Stops section indenting
 
 \begin{document}
@@ -47,17 +50,100 @@
 
 \name{Clifford B. Anderson \\ \\} % Your name at the top
 
-\address{{\bf Contact Information} \\ Phone: (615) 322-6938 \\ Email: \href{mailto:clifford.anderson@vanderbilt.edu}{clifford.anderson@vanderbilt.edu} \\  Web: \href{https://www.cliffordanderson.net}{www.cliffordanderson.net} \\ Public Key: \href{https://keybase.io/andersoncliffb/pgp_keys.asc?fingerprint=c888743eac4ba6e50cdac5a73e6dcb80d42bffcc}{C888 743E AC4B A6E5 0CDA C5A7 3E6D CB80 D42B FFCC}} % contact 
+\address{{\bf Contact Information} \\ Phone: (609) 638-8545 \\ Email: \href{mailto:cliff@cliffordanderson.net}{cliff@cliffordanderson.net} \\  Web: \href{https://www.cliffordanderson.net}{www.cliffordanderson.net} \\ Public Key: \href{https://keybase.io/andersoncliffb/pgp_keys.asc?fingerprint=c888743eac4ba6e50cdac5a73e6dcb80d42bffcc}{C888 743E AC4B A6E5 0CDA C5A7 3E6D CB80 D42B FFCC}} % contact 
 
-\address{{\bf Work Address} \\ Law Library 213 \\ 131 21st Avenue South \\ Vanderbilt University \\ Nashville, TN 37212 } % address 
+\address{{\bf Work Address} \\ Yale Divinity School Library \\ 409 Prospect Street \\ New Haven, CT 06511 \\ USA} % address 
 
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
 
-\import{.}{research.tex} % For academic positions
+% \import{.}{research.tex} % For academic positions 
 
-\import{.}{specialities.tex} % For library positions
+% \import{.}{specialities.tex} % For library positions
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PROFESSIONAL APPOINTMENTS}} 
+
+\vspace{8pt} % Gap between title and text
+
+{\sl Director of the Divinity Library} \hfill May 2024 - \\
+Yale University, New Haven, CT
+
+{\sl Director of Digital Research} \hfill September 2022 - April 2024 \\
+Center of Theological Inquiry, Princeton, NJ
+
+{\sl Chief Digital Strategist} \hfill September 2022 - March 2024 \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
+{\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017 - March 2024 \\
+College of Arts and Science, Vanderbilt University, Nashville, TN 
+
+{\sl Associate University Librarian for Research and Digital Strategy} \hfill July 2019 - August 2022\\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
+\ifbullets
+\begin{itemize}
+    \item Lead digital strategy for the University Libraries
+    \item Supervise three units: Digital Scholarship and Communications, the Visual Resources Center, and the Vanderbilt Television News Archive
+     \item Manage annual budgets of ~\$1,375,000
+\end{itemize}
+\fi
+
+{\sl Adjunct Professor of Computer Science} \hfill August 2018 - August 2020 \\
+School of Engineering, Vanderbilt University, Nashville, TN 
+
+{\sl Associate University Librarian for Research and Learning} \hfill November 2016 - June 2019 \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
+\ifbullets
+\begin{itemize}
+    \item Promoted new models of scholarly communications and digital scholarship
+    \item Supported learning across campus through the library’s teaching program
+    \item Supervised the three distinctive collections units in the library system: Special Collections and University Archives, Eskind Biomedical Special Collections, and the Vanderbilt University Television News Archive
+\end{itemize}
+\fi
+
+{\sl Lecturer} \hfill January 2014 - June 2014 \\
+Vanderbilt Divinity School, Vanderbilt University, Nashville, TN 
+
+{\sl Director, Scholarly Communications} \hfill November 2012 - October 2016 \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN
+
+\ifbullets
+\begin{itemize}
+    \item Appointed the first director to build new department
+    \item Advanced library support for digital scholarship in the humanities, social sciences, and natural sciences
+    \item Provided copyright guidance to librarians, faculty, students, and staff
+    \item Supervised four direct and three indirect reports
+\end{itemize}
+\fi
+
+{\sl Curator, Special Collections} \hfill September 2006 - October 2012 \\
+Princeton Theological Seminary, Princeton, NJ 
+
+\ifbullets
+\begin{itemize}
+    \item Supervised six staff members
+    \item Edited the \emph{Luce Library Bulletin}
+    \item Served as the product owner for the digital collections team
+    \item Launched the \emph{Theological Commons}, largest open-access library of religious and theological literature
+\end{itemize}
+\fi 
+
+{\sl Curator of Reformed Research Collections} \hfill September 2002 - August 2006 \\
+Princeton Theological Seminary, Princeton, NJ 
+
+\ifbullets
+\begin{itemize}
+    \item Created two international research collections
+    \item Implemented digital collections of journals, texts, and photographs
+    \item Supervised the activities of work-study students
+\end{itemize}
+\fi 
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -83,37 +169,7 @@ Harvard Divinity School, Cambridge, MA \hfill June 1995
 {\sl Bachelor of Arts}, Philosophy, {\sl magna cum laude} \\ 
 Kenyon College, Gambier, OH \hfill May 1992
 
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
 
-\section{\centerline{PROFESSIONAL APPOINTMENTS}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl Associate University Librarian for Research and Digital Strategy} \hfill July 2019 \\
-Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
-
-{\sl Adjunct Professor of Computer Science} \hfill August 2018 \\
-School of Engineering, Vanderbilt University, Nashville, TN 
-
-{\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017  \\
-College of Arts and Science, Vanderbilt University, Nashville, TN 
-
-{\sl Associate University Librarian for Research and Learning} \hfill November 2016 - June 2019 \\
-Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
-
-{\sl Lecturer} \hfill January 2014 - June 2014 \\
-Vanderbilt Divinity School, Vanderbilt University, Nashville, TN 
-
-{\sl Director, Scholarly Communications} \hfill November 2012 - October 2016 \\
-Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN
-
-{\sl Curator, Special Collections} \hfill September 2006 - October 2012 \\
-Princeton Theological Seminary, Princeton, NJ 
-
-{\sl Curator of Reformed Research Collections} \hfill September 2002 - August 2006 \\
-Princeton Theological Seminary, Princeton, NJ 
 
 %----------------------------------------------------------------------------------------
 %	COURSES TAUGHT SECTION
@@ -122,6 +178,12 @@ Princeton Theological Seminary, Princeton, NJ
 \section{\centerline{COURSES}}
 
 \vspace{8pt} % Gap between title and text
+
+{\sl \href{https://www.coursera.org/learn/programming-for-a-networked-world}{Coursera: Programming for a Networked World}} \hfill Fall 2023- \\ Vanderbilt University \\ Co-taught with Brian Broll and Akos Ledeczi
+
+{\sl CMA 1001: Retro-Computing} \hfill Spring 2022 \\ College of Arts and Science, Vanderbilt University \\ Co-taught with Lutz Koepnick, Professor of Cinema and Media Arts
+
+{\sl CMAP 8002: History of Media} \hfill Spring 2021 \\ College of Arts and Science, Vanderbilt University \\ Co-taught with Jessie Hock, Claire Sisco King, Lutz Koepnick, and Kevin Leander
 
 {\sl \href{https://github.com/CliffordAnderson/CS1000/blob/master/readme.md}{CS 1000: The Beauty and Joy of Computing}} \hfill Fall 2018, Spring 2019, Fall 2019 \\ School of Engineering, Vanderbilt University
 
@@ -138,6 +200,14 @@ Princeton Theological Seminary, Princeton, NJ
 \section{\centerline{GRANTS AND SPONSORED RESEARCH}}
 
 \vspace{8pt} % Gap between title and text
+
+\begin{hangparas}{.25in}{1}Consultant on Digital Research, "\href{https://www.templeton.org/grant/thriving-in-diverse-contexts-a-study-program-on-psychological-science-for-researchers-in-christian-theology}{Thriving in Diverse Contexts: A Study Program on Psychological Science for Researchers in Christian Theology}, John Templeton Foundation, August 2022-July 2025\end{hangparas}
+
+\begin{hangparas}{.25in}{1}Advisor, "\href{https://news.vanderbilt.edu/2023/04/19/historians-data-scientists-work-to-preserve-endangered-middle-eastern-culture-with-neh-grant/}{Linking Texts and Data from the Medieval Middle East: Next Generation Discovery and Access Tools for Syriac Cultural Heritage}," Humanities Collections and Reference Resources, National Endowment for the Humanities, 2023-\end{hangparas}
+
+\begin{hangparas}{.25in}{1}Instructor, \href{https://pittsburgh-neh-institute.github.io/Institute-Materials-2020/}{Advanced Digital Editing: Modeling the Text and Making the Edition}, NEH Institute for Advanced Topics in the Digital Humanities, University of Pittsburgh, Pittsburgh, July 2022\end{hangparas}
+
+\begin{hangparas}{.25in}{1}Project Manager, \href{https://meta.wikimedia.org/wiki/Wikicite/grant/WikiCite_for_Librarians:_Interactive_Learning_Pathways_for_Information_Professionals}{WikiCite for Librarians: Interactive Learning Pathways for Information Professionals}, WikiCite Grant (funded by the Alfred P. Sloan Foundation), November 2020\end{hangparas}
 
 \begin{hangparas}{.25in}{1}Co-Principal Investigator (with Jason Cohen, Mario Nakazawa, and Mark Schoenfield), \href{https://my.vanderbilt.edu/mellonpartnershumanities/grants/}{Text Mining for the Humanities}, Mellon Partners for Humanities Education Collaborative Grant, Vanderbilt University, 2019-2020\end{hangparas}
 
@@ -185,7 +255,7 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 \section{Thesis}
 \printbibliography[type=thesis,heading=none]
 
-\section{Monograph}
+\section{Monographs}
 \printbibliography[type=book,heading=none, keyword={monograph}]
 
 \section{Edited Volumes}
@@ -239,7 +309,16 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 
 \begin{hangparas}{.25in}{1}"On Fostering Generativity in Digital Scholarship," Fall 2015 CONTENTdm User Group Meeting, Nashville, TN (August 6, 2015)\end{hangparas}
 
-\section{Chair}
+\section{TedX}
+
+\begin{hangparas}{.25in}{1}"\href{https://youtu.be/Hcyfs_Z1Okw}{Deepfakes: Facing the Challenge of Synthetic Media}," TEDxVanderbiltUniversity, Nashville, TN (April 10, 2022)\end{hangparas}
+
+\section{Chair or Moderator}
+\begin{hangparas}{.25in}{1}"{The NISO Video \& Audio Metadata Guidelines: Now What?}," NISO Plus 2023 (February 15, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://np22.niso.plus/Category/64401014-1ffd-49d2-a0e5-5977bc9daaf7}{AI and Machine Learning - Less Theory, More Practice}," NISO Plus 2022 (February 16, 2022)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://nisoplus21.sched.com/event/fMn1}{The Digital Humanities}," NISO Plus 2021 (February 24, 2021)\end{hangparas}
 
 \begin{hangparas}{.25in}{1}"Facilitating Global Historical Research on the Semantic Web: MEDEA (Modeling Semantically Enhanced Digital Editions of Accounts)" American Historical Association, Washington, DC (January 5, 2018)\end{hangparas}
 
@@ -248,6 +327,32 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 \begin{hangparas}{.25in}{1}"Rediscovering the Dutch Reformed Theologian A. A. Van Ruler (1908-1970)," Annual Meeting of the Mid-Atlantic Region of the American Academy of Religion, New Brunswick, NJ (March, 2005)\end{hangparas}
 
 \section{Conference Papers}
+
+\begin{hangparas}{.25in}{1}"Gender Bias in Word Embeddings: A Theological Perspective," Theologies of the Digital III: Biases and Debiasing Theology, Garrett Evangelical Theological Seminary, Evanston, IL (June 5-7, 2025)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Beyond ‘deepfakes’: Stewarding Authenticity in Digital Cultural Heritage," Wikimedia+Libraries International Convention 2025, Mexico City, Mexico (January 16, 2025)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Neocalvinismus am Princeton Theological Seminary (USA) im 19. und 20. Jahrhundert," Neocalvinismus: europäische Formationen einer transnationalen theologischen Bewegung, Wuppertal (March 2, 2024)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Using TEI for Chinese Architectural Data," Short Paper, Tracy Miller and Clifford Anderson with Zhuge Jing, Zuo Lala, and Aurelia Campbell, Encoding Cultures: Joint TEI and MEI Conference, Paderborn University (September 7, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://wikimania.wikimedia.org/wiki/2023:WikiWomen_Summit}{Using LLMs to Overcome Bias: An Experiment}" (with Colleen D Hartung, Rosalind Hinton, and Christine Meyer), WikiWomen Summit, Wikimania 2023, Singapore (August 16, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Programming for a Networked World," Lightning Talk, Snap!Con 2023 (July 21, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Architectura Sinica and the ATTCAT Project," Tracy Miller and Clifford Anderson with Aurelia Campbell, Zhuge Jing, Zuo Lala, Yuh-Fen Benda, Tools of the Trade Conference, Harvard University (March 16, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"A Theology of Intellectual Property" Christian Scholars’ Conference, Lipscomb University, Nashville, TN (June 9, 2022)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://medium.com/the-faculty/from-netsblox-to-spark-and-back-again-b6da21bd79b6}{From NetsBlox to Spark...and Back Again}" (with Brian Broll, Corey Brady, and Mark Schoenfield), Snap!Con 2021 (July 29, 2021)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Plant Patents: Boom or Bust for Sustainable Farming?" Christian Scholars’ Conference, Lipscomb University, Nashville, TN (June 9, 2021)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Project VandyCite: Using Wikidata to Support Research Information Management," WikiCite 2020 Virtual Conference (October 28, 2020)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"A Blocks-Based Introduction to Text Analysis" (with Brian Broll, Sara Burriss, Corey Brady, and Mark Schoenfield), Snap!Con 2020 (July 31, 2020)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Teaching BJC with NetsBlox: A Case Study from Vanderbilt University" (with Gayathri Narasimham), Snap!Con 2020 (July 31, 2020)\end{hangparas}
 
 \begin{hangparas}{.25in}{1}"A New Hermeneutics of Suspicion? The Challenge of deepfakes to Theological Epistemology," Theologies of the Digital: An International Research Colloquium, Princeton, NJ (November 16, 2019)\end{hangparas}
 
@@ -329,6 +434,18 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 
 \section{Panels}
 
+\begin{hangparas}{.25in}{1}"\href{https://nisoplusbaltimore24.sched.com/event/1UZGe/building-or-buying-ai-for-the-scholarly-ecosystem}{Building or Buying? AI for the Scholarly Ecosystem}" with Russel Michalak, NISO Plus 2024, Baltimore, MD (February 14, 2024)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://wikiconference.org/wiki/Submissions:2023/WikiProject_Women_in_Religion_Panel_Discussion_and_Report}{WikiProject Women in Religion Panel: Discussion and Report}," Jere Odell and Rosie Stephenson-Goodknight with Rosalind Hinton, Christine Meyer, Clifford Anderson, Hilary Ward Schnadt, and Colleen Hartung, WikiConference North America 2023, Toronto, ON (November 11, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://wikimania.wikimedia.org/wiki/2023:Related_events/Knowledge_Beyond_Boundaries}{Libraries + Wikimedia: Past, Present, and Future}" (with Silvia Gutiérrez, Rajene Hardeman, Orly Simon, and Nkem Osuigwe), Knowledge Beyond Boundaries: Strengthening Wikimedia and Libraries, National Library of Singapore, Singapore (August 20, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Minding the Gaps: Bibliometric Challenges at the Margins of the Academy" (with Shenmeng Xu, Charlotte Lew, and Wen-Chi Huang), {Preservation and Archiving of Digital Media}," NISO Plus 2023, (February 15, 2023)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://www.cni.org/topics/special-collections/experimenting-with-jstor}{Experimenting with JSTOR as Open Infrastructure for Primary Source Collections}" (with Bruce Heterick), CNI Spring 2022 Project Briefings, CNI Spring 2022 Membership Meeting, San Diego, CA (March 28, 2022)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://wikimania.wikimedia.org/wiki/2021:Submissions/Wikimedia_and_GLAM_in_the_Global_South}{Wikimedia and GLAM in the Global South}," Wikimania 2021, Virtual Conference (August 14, 2021)\end{hangparas}
+
 \begin{hangparas}{.25in}{1}"\href{https://nisoplus20.sched.com/event/YiQG/preservation-and-archiving-of-digital-media}{Preservation and Archiving of Digital Media}," NISO Plus 2020, Baltimore, MD (February 25, 2020)\end{hangparas}
 
 \begin{hangparas}{.25in}{1}"Digital Humanities at the Vanderbilt Television News Archive," Supporting Digital Scholarship: Enabling Analysis of AV Collections at Scale, Association of Moving Image Archivists 2019, Baltimore, MD (November 14, 2019)\end{hangparas}
@@ -363,6 +480,10 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 
 \section{Roundtables}
 
+\begin{hangparas}{.25in}{1}"\href{https://wikimania.wikimedia.org/wiki/2021:Submissions/Documenting_for_Diversity:_The_Case_of_1000_Women_in_Religion}{Documenting for Diversity: The Case of 1000 Women in Religion}," Wikimania 2021, On Demand Program (August 14, 2021)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"Theology of AI" (with Doug Fisher and Helen Shin), Vanderbilt AI and Law Roundtable, Vanderbilt University Law School (April 16, 2021)\end{hangparas}
+
 \begin{hangparas}{.25in}{1}"Best Practices for Archiving Digital Productions," Creating and Keeping Medieval Scholarship: A Consideration of Digital and Traditional Methods, Annual Meeting of the Medieval Academy of America, Philadelphia, PA (March 7, 2018)\end{hangparas}
 
 \begin{hangparas}{.25in}{1}Roundtable on Net Neutrality, Convened by Tennessee State Representative John Ray Clemmons and Tennessee State Senator Lee Harris, Nashville, TN (January 31, 2018)\end{hangparas}
@@ -389,6 +510,10 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 
 \section{Webinars}
 
+\begin{hangparas}{.25in}{1}"\href{https://www.youtube.com/watch?v=blOVRKSrsO0}{Exploring British Periodicals with Databricks}, Databricks University Alliance, Community Lightning Talks (January 27, 2022)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://www.atla.com/webinar/digital-humanities-and-libraries-and-archives-in-religious-studies/}{Digital Humanities and Libraries and Archives in Religious Studies} (with Richard Manly Adams, Jr.), Atla Webinar (November 17, 2020)\end{hangparas}
+
 \begin{hangparas}{.25in}{1}"\href{https://www.niso.org/events/2019/09/preservation-and-archiving-digital-media}{Evolving the Operations of the Vanderbilt Television News Archive: Cloud Computing for Audiovisual Preservation}," Preservation and Archiving of Digital Media, National Information Standards Organization (NISO) Webinar (September 11, 2019)\end{hangparas}
 
 \begin{hangparas}{.25in}{1}"Practical Techniques for Discovering and Visualizing Structured Information," Getting Your Content Ready for Semantic Search and AI, National Federation of Advanced Information Services (NFAIS) Virtual Workshop (August 29, 2018)\end{hangparas}
@@ -404,6 +529,9 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 \begin{hangparas}{.25in}{1}"\href{http://programming4humanists.tamu.edu/syllabus-fall-2015/}{XQuery for Humanists}", three sessions in Programming for Humanists, Texas A\&M University, College Station, TX (October 30; November 6; and November 13, 2015)\end{hangparas}
 
 \section{Workshops}
+\begin{hangparas}{.25in}{1}"A Digital Mirror? Exploring Religious Claims on Wikidata," Sensitive Social Data Science in Theology and Religious Studies. Mixed Methods for Transdisciplinarity, Historiography and Ethics, Institute for Catholic Theology, RWTH Aachen University, Aachen, Germany (September 29, 2021)\end{hangparas}
+
+\begin{hangparas}{.25in}{1}"\href{https://www.snapcon.org/conferences/2021/program/proposals/235}{"Building Your Own Autograder in NetsBlox}" (Brian Broll and Clifford B. Anderson), Snap!Con 2021 (July 30, 2021)\end{hangparas}
 
 \begin{hangparas}{.25in}{1}"Introduction to Neo4j for Digital Humanists," Berea College, Berea, Kentucky (October 30, 2019)\end{hangparas}
 
@@ -438,13 +566,25 @@ Promote Collaboration}," Digital Humanities Implementation Grants, National Endo
 \section{\centerline{PEER REVIEW}}
 
 \vspace{8pt} % Gap between title and text
+Reviewer, Swiss National Science Foundation \hfill 2024 \\
+Reviewer, Association for Computers and the Humanities (ACH) 2023 Virtual Conference \hfill 2023 \\
+Reviewer, Digital Humanities 2023 (Graz) \hfill 2023 \\
+Reviewer, RIDE: A Review Journal for Digital Editions and Resources\hfill 2023 \\
+Reviewer, Riksbankens Jubileumsfond (Sweden) \hfill 2022 \\
+Reviewer, Swiss National Science Foundation \hfill 2022 \\
+Reviewer, \href{https://onlinelibrary.wiley.com/journal/14680025}{Modern Theology}\hfill 2022 \\
+Reviewer, \href{https://scholarlyediting.org/}{Scholarly Editing}\hfill 2022 \\
+Reviewer, DH Unbound (ACH \& CSDH/SCHN) Virtual Conference \hfill 2022 \\
+Panelist, Digital Humanities Advancement Grants, NEH \hfill 2022 \\
+Reviewer, Association for Computers and the Humanities (ACH) 2021 Virtual Conference \hfill 2021 \\
+Reviewer, Swiss National Science Foundation \hfill 2020 \\
 Reviewer, Digital Humanities 2020 (Ottawa) \hfill 2019 \\
 Reviewer, Digital Humanities 2019 (Utrecht) \hfill 2018 \\
 Reviewer, Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO) Domain of Science \hfill 2018 \\
 Reviewer, Digital Humanities 2018 (Mexico City) \hfill 2017 \\
-Panelist (Peer Reviewer), Digital Humanities Advancement Grants, NEH \& IMLS \hfill 2017 \\
+Panelist, Digital Humanities Advancement Grants, NEH \& IMLS \hfill 2017 \\
 Reviewer, Digital Humanities 2017 (Montreal) \hfill 2016 \\
-Panelist (Peer Reviewer), Institute for Advanced Topics in the Digital Humanities, NEH \hfill 2015
+Panelist, Institute for Advanced Topics in the Digital Humanities, NEH \hfill 2015
 
 %----------------------------------------------------------------------------------------
 %	SERVICE SECTION
@@ -455,18 +595,32 @@ Panelist (Peer Reviewer), Institute for Advanced Topics in the Digital Humanitie
 \vspace{8pt} % Gap between title and text
 
 {\bf Current} \\
-Steering Committee, \href{https://meta.wikimedia.org/wiki/Wikimedia_and_Libraries_User_Group}{Wikimedia and Libraries User Group} \hfill 2019\\ 
-Trans-Institutional Task Force on the Digital Humanities, Vanderbilt University \hfill 2019\\
-Task Force for Digital Scholarship, Technology, and Collaboration Services, Vanderbilt University \hfill 2018\\
-Digital Humanities Center Faculty Advisory Committee, Vanderbilt University \hfill 2019\\
-\href{https://www.atla.com/about/committees-councils-task-forces/scholarly-communication-committee/}{Scholarly Communications Committee}, American Theological Library Association \hfill 2018\\
-Committee of Associate University Librarians, University Library, Vanderbilt University \hfill 2017\\
-\href{https://vanderbilt.edu/provost/people/cyrus/committees/copyright-committee.php}{Copyright Committee}, Office of the Provost, Vanderbilt University \hfill 2017\\
-Directors' Policy and Planning Group, University Library, Vanderbilt University \hfill 2016\\
+Curriculum Committee, Yale Divinity School, Yale University \hfill 2025\\
+Research and Learning Leadership Team, Yale University Library, Yale University, \hfill 2024\\
+Scholarly Communication \& Collections Steering Committee, Yale University Library, Yale University\hfill 2025\\
+Search Committee, Manager of Continuations, Yale University Library, Yale University\hfill 2025\\
+Senior Leadership Team, Yale Divinity School, Yale University \hfill 2024\\
+Special Collections Steering Committee, Yale University Library, Yale University \hfill 2024\\
+\href{https://web.library.yale.edu/committees/web-advisory-group}{Web Advisory Group}, Yale University Library, Yale University\hfill 2024\\
+Steering Committee,\href{https://meta.wikimedia.org/wiki/Wikimedia_and_Libraries_User_Group}{Wikimedia and Libraries User Group} \hfill 2019\\ 
 \href{http://barth.ptsem.edu/event/translators-seminar}{Fellow, Karl Barth Translators’ Seminar, Center for Barth Studies, Princeton Theological Seminary} \hfill 2015\\
-\href{http://barth.ptsem.edu/about-cbs/the-advisory-committee}{Consulting Member, Advisory Committee, Center for Barth Studies, Princeton Theological Seminary}  \hfill 2015 \\
+\href{http://barth.ptsem.edu/about-cbs/the-advisory-committee}{Consulting Member, Advisory Committee, Center for Barth Studies, Princeton Theological Seminary}  \hfill 2015\\
 
 {\bf Past} \\
+Committee of Associate University Librarians, University Library, Vanderbilt University \hfill 2017 - 2024\\
+Humanities Roundtable Planning Committee, National Information Standards Organization \hfill 2023\\
+Program Committee, Encoding Cultures: Joint MEC and TEI Conference, Paderborn, Germany\hfill 2023\\
+\href{https://niso.plus/advisory/}{NISO Plus Advisory Committee}, National Information Standards Organization \hfill 2021 - 2023\\
+Search Committee, Director of Special Collections, University Library \hfill 2022 \\
+Search Committee, Cloud Engineer, University Library \hfill 2022 \\
+Member, \href{https://www.niso.org/standards-committees/video-audio-metadata-guidelines}{Video \& Audio Metadata Guidelines Working Group}, NISO \hfill 2021 - 2023\\ 
+Directors' Policy and Planning Group, University Library, Vanderbilt University \hfill 2016 - 2022\\
+Planning Committee, \href{https://niso.plus/niso-plus-goes-global/}{NISO Plus 2021}, National Information Standards Organization \hfill 2020 - 2021 \\
+Digital Projects and Services Implementation Group, Office of the Provost, Vanderbilt University \hfill 2020 \\
+Digital Humanities Center Faculty Advisory Committee, Vanderbilt University \hfill 2019 - 2020 \\
+\href{https://www.atla.com/about/committees-councils-task-forces/scholarly-communication-committee/}{Scholarly Communications Committee}, American Theological Library Association \hfill 2018 - 2020\\
+Trans-Institutional Task Force on the Digital Humanities, Vanderbilt University \hfill 2019 - 2020\\
+\href{https://vanderbilt.edu/provost/people/cyrus/committees/copyright-committee.php}{Copyright Committee}, Office of the Provost, Vanderbilt University \hfill 2017 - 2020\\
 Digital Resource Committee, Office of the Provost, Vanderbilt University \hfill 2019\\
 \href{https://www.vanderbilt.edu/provost/committees/blackboard.php}{Course Management System Advisory Committee}, Office of the Provost, Vanderbilt University\hfill 2017 - 2019\\
 Workshop and Webinar Committee, National Federation of Advanced Information Services \hfill 2017 - 2019\\
@@ -512,7 +666,7 @@ Faculty Committee (ex officio), Center for Barth Studies, Princeton Theological 
 \section{\centerline{CONFERENCES (CO-)ORGANIZED}} 
 
 \vspace{8pt} % Gap between title and text
-
+"Theologies of the Digital III: Biases and Debiasing Theology," Garrett Evangelical Theological Seminary, Evanston, IL \hfill June 2025 \\
 "Cultural Heritage at Scale: Encoding Cultural Heritage at Scale," Vanderbilt University \hfill May 2019 \\
 "Cultural Heritage at Scale: Cultural Heritage in an Age of Big Data," Vanderbilt University \hfill June 2018 \\
 "Cultural Heritage at Scale: Crowd-sourcing with a Human Face," Vanderbilt University \hfill June 2017 \\
@@ -523,7 +677,20 @@ Faculty Committee (ex officio), Center for Barth Studies, Princeton Theological 
 "Karl Barth and American Evangelicals: Friends or Foes?" Princeton Theological Seminary \hfill June 2007 \\
 "Consultation on Neo-Calvinism, Pluralism and Civil Society," Princeton Theological Seminary \hfill March 2007 \\ "‘Thy Word is Truth’: Reading Scripture Theologically with Karl Barth," \\ Princeton Theological Seminary \hfill May 2006 \\
 "The Sovereignty of God, Religious Freedom and Christian Persecution," \\ Princeton Theological Seminary \hfill April 2006 \\
-"Religion, Pluralism, and Public Life:Abraham Kuyper’s Legacy for the 21st Century," \\ Princeton Theological  Seminary \hfill February 1998
+"Religion, Pluralism, and Public Life: Abraham Kuyper’s Legacy for the 21st Century," \\ Princeton Theological  Seminary \hfill February 1998
+
+%----------------------------------------------------------------------------------------
+%	EDITORIAL ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{EDITORIAL ACTIVITIES}} 
+
+\vspace{8pt} % Gap between title and text
+
+Editorial Board, {\sl \href{https://www.henrystewartpublications.com/jdmm/editorialboard}{Journal of Digital Media Management} } \hfill 2021 - \\
+Contributing Editor, {\sl \href{http://www.culturalencountersjournal.com/the-team}{Cultural Encounters: A Journal for the Theology of Culture} } \hfill 2005 -
+
+
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL DEVELOPMENT SECTION
@@ -532,8 +699,14 @@ Faculty Committee (ex officio), Center for Barth Studies, Princeton Theological 
 \section{\centerline{PROFESSIONAL DEVELOPMENT}} 
 
 \vspace{8pt} % Gap between title and text
+{\bf Amazon Certificate} \\
+\href{https://www.credly.com/badges/d0c14524-8c36-4e37-b97c-8fe85dce83c2}{AWS Certified Cloud Practitioner} \hfill September 11, 2021
+
+{\bf SAP Certificate} \\
+From Media Computation to Data Science, openSAP \hfill October 21, 2020
 
 {\bf Coursera Certificates} \\
+\href{https://coursera.org/share/8d14a404c900cac9c31c1382612cd6bd}{Taiwan Law in Focus: Economy, Society and Democracy}, National Taiwan University \hfill November 19, 2021 \\
 \href{https://www.coursera.org/account/accomplishments/certificate/JTKL888WQNHQ}{\begin{CJK*}{UTF8}{bsmi}是誰在說話 - 可愛的臺灣\end{CJK*} (Intermediate Chinese), National Taiwan University} \hfill March 3, 2019 \\
 \href{https://www.coursera.org/account/accomplishments/certificate/GX63GZSFX6R4}{Learning Chinese: Start From Scratch (\begin{CJK*}{UTF8}{bsmi}零到一學中文\end{CJK*}), National Taiwan University} \hfill January 17, 2019 \\
 \href{https://www.coursera.org/account/accomplishments/certificate/2XCZRUU9MAUD}{The Holocaust: An Introduction (I), Tel Aviv University \& Yad Vashem} \hfill November 18, 2018 \\
@@ -596,8 +769,7 @@ Implementing Encoded Archival Description \hfill January 6-10, 2003
 \vspace{8pt} % Gap between title and text
 
 Advanced: Dutch, German \\
-Intermediate: French \\ 
-Beginner: Chinese \\
+Intermediate: Chinese, French \\ 
 
 %----------------------------------------------------------------------------------------
 %	DIGITAL SKILLS SECTION
@@ -607,9 +779,11 @@ Beginner: Chinese \\
 
 \vspace{8pt} % Gap between title and text
 
-Programming Languages: \hfill NetsBlox, Snap!, Cypher, JavaScript, Python, R, Elm \\
-Frameworks: \hfill Apache Spark, BaseX, eXist, Hugo, Jekyll, Leaflet, Omeka, Node (Express) \\
-Tools: \hfill ArcGIS, git, GitHub, \LaTeX, MapBox, oXygen, RStudio, Twilio, Zotero \\
+Programming Languages: \hfill NetsBlox, Cypher, JavaScript, Python, R, Scala, SQL \\
+Applications: \hfill Adobe After Effects, Adobe Premiere Pro, ArcGIS, MapBox, Omeka, Overleaf \\
+Databases: \hfill CouchDB, BaseX, eXist, RumbleDB \\
+Frameworks: \hfill Apache Spark, Databricks, Hugo, Jekyll, Langchain, Leaflet, Next.js/Vercel\\
+Tools: \hfill BibTeX, git, GitHub, \LaTeX, oXygen, ngrok, Pandoc, RStudio, Visual Studio Code, Zotero \\
 XML Standards: \hfill XPath, XML Schema, Relax NG, Schematron, XQuery, XSLT
 
 %----------------------------------------------------------------------------------------
@@ -620,11 +794,21 @@ XML Standards: \hfill XPath, XML Schema, Relax NG, Schematron, XQuery, XSLT
 
 \vspace{8pt} % Gap between title and text
 
-American Theological Library Association (Atla) \\ 
 Association of Computing Machinery (ACM) \\
 Association for Computers and the Humanities (ACH) \\
-Karl Barth Society of North American (KBSNA)
+Association for Information Science and Technology (ASIS\&T) \\
+Karl Barth Society of North America (KBSNA)
 
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{VOLUNTEER WORK}} 
+
+\vspace{8pt} % Gap between title and text
+
+Church Council, Fishers Island Union Chapel, Fishers Island, NY \hfill September 2024 - \\
+Secretary of the Board of Trustees, \href{https://filibrary.org/}{Fishers Island Public Library}, Fishers Island, NY \hfill August 2023 - \\
 
 \end{resume} 
 \end{document}

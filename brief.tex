@@ -13,13 +13,13 @@
 % This template requires the res.cls file to be in the same directory as the
 % .tex file. The res.cls file provides the resume style used for structuring the
 % document.
-%
+%https://www.overleaf.com/project/5bdce4749050e95c68f6e198
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{hyperref}
@@ -37,6 +37,9 @@
 \usepackage[notes,backend=biber, sorting=ydnt]{biblatex-chicago}
 \bibliography{ref}
 
+\newif\ifbullets
+\bulletsfalse % or \bulletstrue
+
 \newsectionwidth{0pt} % Stops section indenting
 
 \begin{document}
@@ -49,13 +52,95 @@
 
 \address{{\bf Contact Information} \\ Phone: (615) 322-6938 \\ Email: \href{mailto:clifford.anderson@vanderbilt.edu}{clifford.anderson@vanderbilt.edu} \\  Web: \href{https://www.cliffordanderson.net}{www.cliffordanderson.net} \\ Public Key: \href{https://keybase.io/andersoncliffb/pgp_keys.asc?fingerprint=c888743eac4ba6e50cdac5a73e6dcb80d42bffcc}{C888 743E AC4B A6E5 0CDA C5A7 3E6D CB80 D42B FFCC}} % contact 
 
-\address{{\bf Work Address} \\ Law Library 213 \\ 131 21st Avenue South \\ Vanderbilt University \\ Nashville, TN 37212 } % address 
+\address{{\bf Work Address} \\ Law Library \\ 131 21st Avenue South \\ Vanderbilt University \\ Nashville, TN 37203 } % address 
 
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
 
-\import{.}{theology-research.tex} % For theology positions
+% \import{.}{research.tex} % For academic positions 
+
+% \import{.}{specialities.tex} % For library positions
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\centerline{PROFESSIONAL APPOINTMENTS}} 
+
+\vspace{8pt} % Gap between title and text
+
+{\sl Director of Digital Research} \hfill September 2022 - \\
+Center of Theological Inquiry, Princeton, NJ
+
+{\sl Chief Digital Strategist, University Libraries} \hfill September 2022 - \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
+{\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017 - \\
+College of Arts and Science, Vanderbilt University, Nashville, TN 
+
+{\sl Associate University Librarian for Research and Digital Strategy} \hfill July 2019 - August 2022\\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
+\ifbullets
+\begin{itemize}
+    \item Lead digital strategy for the University Libraries
+    \item Supervise three units: Digital Scholarship and Communications, the Visual Resources Center, and the Vanderbilt Television News Archive
+     \item Manage annual budgets of ~\$1,375,000
+\end{itemize}
+\fi
+
+{\sl Adjunct Professor of Computer Science} \hfill August 2018 - August 2020 \\
+School of Engineering, Vanderbilt University, Nashville, TN 
+
+{\sl Associate University Librarian for Research and Learning} \hfill November 2016 - June 2019 \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
+
+\ifbullets
+\begin{itemize}
+    \item Promoted new models of scholarly communications and digital scholarship
+    \item Supported learning across campus through the library’s teaching program
+    \item Supervised the three distinctive collections units in the library system: Special Collections and University Archives, Eskind Biomedical Special Collections, and the Vanderbilt University Television News Archive
+\end{itemize}
+\fi
+
+{\sl Lecturer} \hfill January 2014 - June 2014 \\
+Vanderbilt Divinity School, Vanderbilt University, Nashville, TN 
+
+{\sl Director, Scholarly Communications} \hfill November 2012 - October 2016 \\
+Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN
+
+\ifbullets
+\begin{itemize}
+    \item Appointed first director to build new department
+    \item Advanced library support for digital scholarship in the humanities, social sciences, and natural sciences
+    \item Provided copyright guidance to librarians, faculty, students, and staff
+    \item Supervised four direct and three indirect reports
+\end{itemize}
+\fi
+
+{\sl Curator, Special Collections} \hfill September 2006 - October 2012 \\
+Princeton Theological Seminary, Princeton, NJ 
+
+\ifbullets
+\begin{itemize}
+    \item Supervised six staff members
+    \item Edited the \emph{Luce Library Bulletin}
+    \item Served as the product owner for the digital collections team
+    \item Launched the \emph{Theological Commons}, largest open access library of religious and theological literature
+\end{itemize}
+\fi 
+
+{\sl Curator of Reformed Research Collections} \hfill September 2002 - August 2006 \\
+Princeton Theological Seminary, Princeton, NJ 
+
+\ifbullets
+\begin{itemize}
+    \item Created two international research collections
+    \item Implemented digital collections of journals, texts, and photographs
+    \item Supervised the activities of work study students
+\end{itemize}
+\fi 
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -67,51 +152,19 @@
 
 {\sl Master of Science}, 
 Library and Information Science, {\sl with distinction} \\ 
-Pratt Institute, New York, NY \hfill 2012 
+Pratt Institute, New York, NY \hfill May 2012 
 
 {\sl Doctor of Philosophy}, Systematic Theology,  {\sl summa cum laude} \\ 
-Princeton Theological Seminary, Princeton, NJ \hfill 2005
+Princeton Theological Seminary, Princeton, NJ \hfill May 2005
 
 {\sl Master of Theology} \\ 
-Princeton Theological Seminary, Princeton, NJ \hfill 1996
+Princeton Theological Seminary, Princeton, NJ \hfill May 1996
 
 {\sl Master of Divinity} \\ 
-Harvard Divinity School, Cambridge, MA \hfill 1995
+Harvard Divinity School, Cambridge, MA \hfill June 1995
 
 {\sl Bachelor of Arts}, Philosophy, {\sl magna cum laude} \\ 
-Kenyon College, Gambier, OH \hfill 1992
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{PROFESSIONAL APPOINTMENTS}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl Associate University Librarian for Research and Digital Strategy} \hfill July 2019 \\
-Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
-
-{\sl Adjunct Professor of Computer Science} \hfill August 2018 \\
-School of Engineering, Vanderbilt University, Nashville, TN 
-
-{\sl Professor of Religious Studies} (Secondary Appointment) \hfill January 2017 - December 2019 \\
-College of Arts and Science, Vanderbilt University, Nashville, TN 
-
-{\sl Associate University Librarian for Research and Learning} \hfill November 2016 - June 2019 \\
-Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
-
-{\sl Lecturer} \hfill January 2014 - June 2014 \\
-Vanderbilt Divinity School, Vanderbilt University, Nashville, TN 
-
-{\sl Director, Scholarly Communications} \hfill November 2012 - October 2016 \\
-Jean and Alexander Heard Library, Vanderbilt University, Nashville, TN 
-
-{\sl Curator, Special Collections} \hfill September 2006 - October 2012 \\
-Princeton Theological Seminary, Princeton, NJ 
-
-{\sl Curator of Reformed Research Collections} \hfill September 2002 - August 2006 \\
-Princeton Theological Seminary, Princeton, NJ 
+Kenyon College, Gambier, OH \hfill May 1992
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
@@ -135,21 +188,8 @@ Princeton Theological Seminary, Princeton, NJ
 \section{Edited Volumes}
 \printbibliography[type=book,heading=none, keyword={edited}]
 
-\section{Articles}
-\printbibliography[type=article,heading=none, keyword={theology}, notkeyword=review, notkeyword={translation}]
-
-\section{Chapters}
-\printbibliography[type=incollection,heading=none, keyword={theology},
-notkeyword={encyclopedia}, notkeyword={translation}]
-
-\section{Encyclopedia Articles}
-\printbibliography[type=incollection,heading=none, keyword={theology}, keyword={encyclopedia}, notkeyword={translation}]
-
-\section{Reviews}
-\printbibliography[type=article,heading=none, keyword={review}, keyword={theology}]
-
-\section{Translations}
-\printbibliography[filter=translations, heading=none, keyword={translation}, keyword={theology}]
+\section{Articles (Refereed)}
+\printbibliography[type=article,heading=none, keyword={refereed}]
 
 \end{resume} 
 \end{document}
